@@ -23,7 +23,23 @@ import {
     jobit,
     tripguide,
     threejs,
-    argoid_logo
+    argoid_logo,
+    virtusa_logo,
+    girlscript_logo,
+    dsa_logo,
+    c_logo,
+    cpp_logo,
+    java_logo,
+    python_logo,
+    sql_logo,
+    bootstrap_logo,
+    django_logo,
+    angular_logo,
+    framer_motion_logo,
+    aws_logo,
+    P_Portfolio_DP,
+    budget_tracker_dp,
+    newspeek_dp
   } from "../assets";
   
   export const navLinks = [
@@ -90,9 +106,13 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Angualar",
+      icon: angular_logo
     },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -101,10 +121,10 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
     {
       name: "Three JS",
       icon: threejs,
@@ -113,14 +133,55 @@ import {
       name: "git",
       icon: git,
     },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
+    // {
+    //   name: "DSA",
+    //   icon: dsa_logo
+    // },
     {
-      name: "figma",
-      icon: figma,
+      name: "C",
+      icon: c_logo
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "C++",
+      icon: cpp_logo
     },
+    {
+      name: "Java",
+      icon: java_logo
+    },
+    {
+      name: "Python",
+      icon: python_logo
+    },
+    {
+      name: "Django",
+      icon: django_logo
+    },
+    {
+      name: "MySQL",
+      icon: sql_logo
+    },
+    {
+      name: "BootStrap",
+      icon: bootstrap_logo
+    },
+    {
+      name: "Framer Motion",
+      icon: framer_motion_logo
+    },
+    {
+      name: "AWS",
+      icon: aws_logo
+    },
+    
   ];
   
   const experiences = [
@@ -132,49 +193,55 @@ import {
       iconBg: "#E6DEDD",
       date: "March 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Angular and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implementing top-notch gradient responsive design and ensuring cross-browser compatibility.",
+        "Developed dashboard for the Argoid product with eye-catching tables, graphs and cards view to visualise data.",
+        "Built real-time CSS editor to display the items of online stores based on the user’s input of styles with Javascript logical implementation.",
+        "Developed Slot Recommendation UI/UX allowing users to add recommendations for their stores based on slots and pin specific recommendations to a certain slot number.",
+        "Used advanced frontend and array manipulation concepts with logical implementation to get things working.",
+        "Integrated several CRUD and functional APIs to make UI/UX interactive.",
+        // "Developed projects actively with top-notch gradient responsive designs and effects to make UI/UX look professional.",
+        "Reduced the workload nearly 15% of the team by contributing with React, Angular and other essential technologies."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Engineer Intern",
+      company_name: "Virtusa",
+      icon: virtusa_logo,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      // iconBg: "#383E56",
+      date: "Jun 2022 - Mar 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developed Full Stack Applications with team collaboration.",
+        "Improved myself 70% by actively participating in Real-Time projects and learning new emerging technologies.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Mastered React, Django and other emerging technologies and built successful Full Stack projects.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Student Ambassador",
+      company_name: "Virtusa",
+      icon: virtusa_logo,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Feb 2022 - Mar 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Organised Technical events in the College on behalf of Virtusa.",
+        "Engaged with students, answering their questions around our institution.",
+        "Conducted events to Reassure and guide the students towards their Bright Future.",
+      ],
+    },
+    {
+      title: "OPEN SOURCE CONTRIBUTOR",
+      company_name: "Girlscript Winter of Contributing",
+      icon: girlscript_logo,
+      iconBg: "#E6DEDD",
+      date: "Sep 2021 - Nov 2021",
+      points: [
+        "Coded and managed codes on Data Structures and Algorithms with explanations in C++.",
+        "Eliminated the errors from pre-existing codes.",
+        "Improved the accuracy of the codes to nearly 98%.",
+        "Contributed to many Programs under the guidance of an expert facilitator.",
       ],
     },
   ];
@@ -208,67 +275,99 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Personal Portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Personal portfolio with interactive 3D objects and effects. Implemented by using a generic editable details file which can be changed according to the users background.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Three.js",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Framer-motion",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: P_Portfolio_DP,
+      source_code_link: "https://github.com/PranavYo/Personal_portfolio.git",
     },
     {
-      name: "Job IT",
+      name: "Budget Tracker and Bill splitter",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Full-stack web application that enables users to track their budgets, view their transactions, and split the bills among friends.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "RestAPI",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Django",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: budget_tracker_dp,
+      source_code_link: "https://github.com/PranavYo/BudgetTracking-BillSpliting.git",
     },
     {
-      name: "Trip Guide",
+      name: "News-peek",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A web based Application to get quick news update on different Genre and enjoy uninterrupted news without needing to change tabs for more news. Implemented infinite scroll.",
       tags: [
         {
-          name: "nextjs",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "RestAPI",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "HTML",
           color: "pink-text-gradient",
         },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "green-text-gradient",
+        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: newspeek_dp,
+      source_code_link: "https://github.com/PranavYo/NewsPeek-React.git",
     },
   ];
   

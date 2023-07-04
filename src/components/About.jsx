@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => {
         glareColor="violet" 
         glarePosition="all" 
         glareBorderRadius='20px'
-        className='xs:w-[250px] w-full green-pink-gradient p-[0.2rem] rounded-[20px] shadow-card'
+        className='w-[16rem] green-pink-gradient p-[0.2rem] rounded-[20px] shadow-card'
         style={{transformStyle: 'preserve-3d'}}
       >
         <div 

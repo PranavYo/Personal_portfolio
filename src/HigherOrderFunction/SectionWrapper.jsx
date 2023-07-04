@@ -12,6 +12,7 @@ const SectionWrapper = (Component, secId) => function HOC() {
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
+        viewport={{once: true, amount: 0.25}}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-[7rem]`}
     >
         <Component />
@@ -22,6 +23,7 @@ const SectionWrapper = (Component, secId) => function HOC() {
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
+        viewport={{once: true, amount: 0.25}}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0 mt-[7rem]`}
     >
         <Component />

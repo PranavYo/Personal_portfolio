@@ -1,35 +1,27 @@
-import { Route, Routes } from 'react-router-dom'
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
+import AlertComponent from './components/AlertComponent'
+import AlertState from './context/Alerts/AlertState'
 
 function App() {
 
   return (
     <>
-      <div className="bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+      <AlertState>
+        <div className='fixed top-[4rem] left-[29rem] w-[33rem] z-20'>
+          <AlertComponent />
         </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-        {/* <Feedbacks/> */}
-        {/* <div className="relative z-0"> */}
+        <div className="bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <About/>
+          <Experience/>
+          <Tech/>
+          <Works/>
           <Contact/>
-        {/* </div> */}
-      </div>
-
-      {/* <Routes>
-        <Route path='/' element={ <Navbar/> } />
-        <Route path='/hero' element={ <Hero /> } />
-        <Route path='/about' element={ <About/> } />
-        <Route path='/experience' element={ <Experience/> } />
-        <Route path='/tech' element={ <Tech/> } />
-        <Route path='/work' element={ <Works/> } />
-        <Route path='/feedbacks' element={ <Feedbacks/> } />
-        <Route path='/contact' element={ <Contact/> } />
-      </Routes> */}
+        </div>
+      </AlertState>
     </>
   )
 }

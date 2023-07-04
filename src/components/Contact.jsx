@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {SectionWrapper} from '../HigherOrderFunction'
 import { motion } from 'framer-motion'
 import { slideIn } from '../utils/motion'
@@ -6,8 +6,11 @@ import { styles } from '../style'
 import { EarthCanvas } from './canvas'
 import emailjs from '@emailjs/browser'
 import {StarsCanvas} from './canvas'
+import AlertContext from '../context/Alerts/AlertContext'
 
 const Contact = () => {
+
+  const {showAlert} = useContext(AlertContext)
 
   const [form, setForm] = useState({
     name: '',
@@ -37,7 +40,8 @@ const Contact = () => {
     )
     .then(() => {
       setLoading(false)
-      alert('Thank you. I will get back to you as soon as possible.')
+      // alert('Thank you. I will get back to you as soon as possible.')
+      showAlert('Thank you. I will get back to you as soon as possible.', 'success', 'Success')
       setForm({
         name: '',
         email: '',
@@ -45,7 +49,8 @@ const Contact = () => {
       })
     }, (error) => {
       setLoading(false)
-      alert('Something went wrong!')
+      // alert('Something went wrong!')
+      showAlert('Something went wrong! Mail to: dpranav222@gmail.com', 'warning', 'Failed')
     })
     
   }
@@ -57,7 +62,7 @@ const Contact = () => {
       <div className='xl:mt-12 xl:flex-row flex flex-col-reverse justify-between gap-10 relative z-0'>
         <motion.div
           variants={slideIn('left', 'tween', 0.3, 1)}
-          className=' flex-[0.75] bg-black-100 p-8 rounded-2xl'
+          className=' flex-[0.75] bg-black-100 p-7 rounded-2xl'
         >
           <p className={styles.sectionSubText}>Get in touch.</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -83,7 +88,7 @@ const Contact = () => {
             </label>
             <label htmlFor="" className='flex flex-col'>
               <span className='text-white font-medium mb-4 ml-4'>Your Name</span>
-              <textarea name='message' rows={7} value={form.message} onChange={handleOnChange} placeholder="What's your message?"
+              <textarea name='message' rows={6} value={form.message} onChange={handleOnChange} placeholder="What's your message?"
                 className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                 required
               />

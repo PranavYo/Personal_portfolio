@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
       variants={fadeIn('up', 'spring', index*0.5, 0.75)}
     >
       <Tilt
-        className='xs:w-[250px] w-full bg-tertiary rounded-2xl'
+        className='xs:w-[22rem] w-full bg-tertiary rounded-xl'
         style={{transformStyle: 'preserve-3d'}}
       >
         <div 
@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
         >
           <img 
             src={image} alt={name} 
-            className='w-full h-full object-contain rounded-2xl'
+            className='w-full h-full rounded-xl'
             // style={{transform: 'translateZ(60px)'}}
           />
           <div 
@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
         </div>
 
         <div 
-          className='mt-5 p-4' 
+          className='p-4' 
           // style={{transform: 'translateZ(60px)'}}
         >
           <h3 className="text-white font-bold text-[1.1rem]">{name}</h3>

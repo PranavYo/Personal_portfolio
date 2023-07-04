@@ -39,7 +39,7 @@ const Navbar = () => {
         const sectionTopPos = allSections[i].offsetTop
         const sectionBottomPos = sectionTopPos + allSections[i].offsetHeight
         
-        console.log(allSections[i].id, sectionTopPos, sectionBottomPos, allSections.length);
+        // console.log(allSections[i].id, sectionTopPos, sectionBottomPos, allSections.length);
 
         if(allSections[i].id !== '' && currentScrollPos >= sectionTopPos && currentScrollPos < sectionBottomPos) {
           setcurrentPath(allSections[i].id)
@@ -50,17 +50,17 @@ const Navbar = () => {
       // if(!updated) setcurrentPath('/')
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, {passive: true})
   
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', handleScroll, {passive: true})
       // Removes the event when this Component Unmounts.
     }
   }, []) // To make the snippet execute only once, even when something changes.
 
   return (
     <section id='/'>
-      <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+      <nav className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 bg-primary`}>
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <ScrollLink 
             to={'/'}
@@ -71,7 +71,7 @@ const Navbar = () => {
             className='flex items-center gap-2'
           >
             <img src={logo} alt="logo" className='w-12 object-contain cursor-pointer'/>
-            <p className='font-bold cursor-pointer text-[1.2rem]'>Pranav</p>
+            <p className='font-bold cursor-pointer text-[1.4rem]'>Pranav</p>
           </ScrollLink>
 
           <ul className='ul-list list-none sm:flex flex gap-10 items-center'>
