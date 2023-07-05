@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import {SectionWrapper} from '../HigherOrderFunction'
 import { motion } from 'framer-motion'
-import { slideIn } from '../utils/motion'
+import { fadeIn, slideIn } from '../utils/motion'
 import { styles } from '../style'
 import { EarthCanvas } from './canvas'
 import emailjs from '@emailjs/browser'
@@ -101,7 +101,7 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-          variants={slideIn('right', 'tween', 0.3, 1)}
+          variants={fadeIn('up', 'tween', 1, 1)}
           className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
         >
           <EarthCanvas />

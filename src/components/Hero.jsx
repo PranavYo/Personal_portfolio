@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
-      <div className="absolute bottom-5 w-full flex justify-center items-center">
+      <div className="absolute xxs:bottom-[15rem] xs:bottom-[10rem] sm:bottom-10 lg:bottom-5 bottom-5 w-full flex justify-center items-center">
         <ScrollLink 
           to={'about'}
           spy={true}
