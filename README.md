@@ -2,7 +2,7 @@
 
 ## Demo Preview:
 
-https://github.com/PranavYo/Personal_portfolio/assets/76433307/ed94e7be-57b3-452f-9516-ebf51c550116
+https://github.com/PranavYo/Personal_portfolio/assets/76433307/cb6ef759-97e8-4d76-8bcc-c43f46ebb557
 
 
 
