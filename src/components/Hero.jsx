@@ -3,6 +3,7 @@ import { styles } from '../style'
 import { ComputersCanvas } from './canvas'
 import { Link as ScrollLink } from 'react-scroll'
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -14,7 +15,26 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Pranav</span></h1>
-          <p className={`${styles.heroSubText} mr-[4vw] text-white-100`}>Welcome,<br/> I'm a Full-Stack Developer and Competitive Programmer.</p>
+          <p className={`${styles.heroSubText} mr-[4vw] mt-[2vh] text-white-100`}>Welcome, I'm a&nbsp;
+            {/* I'm a Full-Stack Developer and Competitive Programmer. */}
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                'Front-end developer.',
+                1000, // wait 1s
+                'Back-end developer.',
+                1000,
+                'Problem solver.',
+                1000,
+                'DSA enthusiast.',
+                1000
+              ]}
+              wrapper="span"
+              speed={70}
+              style={{ color:  '#915eff'}}
+              repeat={Infinity}
+            />
+          </p>
         </div>
       </div>
       <ComputersCanvas />
