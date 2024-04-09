@@ -6,7 +6,6 @@ import 'react-vertical-timeline-component/style.min.css'
 import {styles} from '../style'
 import {experiences} from '../constants'
 import {textVariant} from '../utils/motion'
-import { slideIn } from '../utils/motion'
 
 const ExperienceCard = (props) => {
   const {experience} = props

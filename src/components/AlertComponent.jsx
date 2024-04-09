@@ -7,8 +7,7 @@ export default function AlertComponent() {
   const {alert} = useContext(AlertContext)
 
   const isAlert = (alert) => {
-    if(alert) return true
-    return false
+    return !!(alert);
   }
 
   return (
