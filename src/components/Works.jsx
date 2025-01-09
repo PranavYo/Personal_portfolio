@@ -65,9 +65,7 @@ const ProjectCard = (props) => {
 
 const Works = () => {
   return (
-    <div 
-      // id='work'
-    >
+    <div>
       <motion.div
         variants={textVariant(0.1)}
       >
@@ -79,10 +77,11 @@ const Works = () => {
         variants={fadeIn('right', '', 0.2, 1)}
         className='mt-4 text-secondary max-w-4xl leading-6'
       >
-        I'm an enthusiastic Programmer. I am a Software Engineer Intern at Argoid Analytics working in Front-End Development and Ex-Virtusa Software Engineer Intern worked as a Full-Stack Developer. I enjoy learning and exploring new things. I also do Competitive Programming and LeetCode. I am proficient in C, C++, Java etc. 
+        Following projects showcases my skills and experience through real-world examples of my work developed in my college and free time.
+        Each project is briefly described with links to code repositories and video demos in it. You can find more projects in my GitHub profile.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 items-center justify-center'>
         {
           projects.map((project, index) => {
 

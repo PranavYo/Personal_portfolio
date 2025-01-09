@@ -45,12 +45,10 @@ const ExperienceCard = (props) => {
 const Experience = () => {
   return (
     <>
-      <motion.div
-        variants={textVariant(0.1)}
-      >
+      <div>
         <p className={styles.sectionSubText}>What have I done so far?</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      </div>
 
       <div className="mt-[2rem] flex flex-col justify-start">
         <VerticalTimeline>

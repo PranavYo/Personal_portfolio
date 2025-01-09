@@ -31,6 +31,9 @@ import django_logo from './tech/django_logo.png'
 import angular_logo from './tech/angular_logo.png'
 import framer_motion_logo from './tech/framer-motion_logo.svg'
 import aws_logo from './tech/aws_logo.png'
+import quill_logo from './tech/quill_logo.png'
+import axios_logo from './tech/axios_logo.png'
+import exceljs_logo from './tech/exceljs_logo.png'
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -39,6 +42,8 @@ import tesla from "./company/tesla.png";
 import argoid_logo from './company/argoid_logo.png'
 import virtusa_logo from './company/virtusa_logo.png'
 import girlscript_logo from './company/girlscript_logo.png'
+import epam_logo from './company/epam_logo.png'
+import marquee_logo from './company/marquee_equity_logo.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -46,6 +51,7 @@ import tripguide from "./tripguide.png";
 import P_Portfolio_DP from './P_Portfolio_DP.png'
 import budget_tracker_dp from './Budget_Tracker_DP.png'
 import newspeek_dp from './Newspeek_DP.png'
+import feedback_app_dp from './feedback_app_dp.png'
 
 export {
   logo,
@@ -92,5 +98,11 @@ export {
   aws_logo,
   P_Portfolio_DP,
   budget_tracker_dp,
-  newspeek_dp
+  newspeek_dp,
+  epam_logo,
+  marquee_logo,
+  exceljs_logo,
+  quill_logo,
+  axios_logo,
+  feedback_app_dp
 };

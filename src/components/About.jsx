@@ -35,9 +35,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div 
-      // id='about'
-    >
+    <div>
       <motion.div
         variants={textVariant(0.1)}
       >
@@ -49,7 +47,9 @@ const About = () => {
         variants={fadeIn('right', '', 0.2, 1)}
         className='mt-4 text-secondary max-w-3xl leading-6'
       >
-        I'm an enthusiastic Programmer. I am a Software Engineer Intern at Argoid Analytics working in Front-End Development and Ex-Virtusa Software Engineer Intern worked as a Full-Stack Developer. I enjoy learning and exploring new things. I also do Competitive Programming and LeetCode. I am proficient in C, C++, Java etc. 
+        I'm an enthusiastic Programmer. I am a Software Engineer at Epam Systems working for MasterCard client as a UI / Front-End development engineer.
+        I enjoy learning and exploring new things. I also do Competitive Programming and LeetCode. Efficiently use AI in my development and deliver work with high quality in short time.
+        I would like to enhance myself further in this field and achieve greater goals. Love to play Fifa and chess in my free time.
       </motion.p>
 
       <div className='flex flex-wrap gap-10 mt-10 items-center justify-evenly rounded-[20px]'>

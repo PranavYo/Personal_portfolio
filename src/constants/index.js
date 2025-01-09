@@ -39,7 +39,13 @@ import {
     aws_logo,
     P_Portfolio_DP,
     budget_tracker_dp,
-    newspeek_dp
+    newspeek_dp,
+    marquee_logo,
+    epam_logo,
+    exceljs_logo,
+    axios_logo,
+    quill_logo,
+    feedback_app_dp
   } from "../assets";
   
   export const navLinks = [
@@ -126,6 +132,18 @@ import {
       icon: mongodb,
     },
     {
+      name: "ExcelJs",
+      icon: exceljs_logo,
+    },
+    {
+      name: "Axios",
+      icon: axios_logo,
+    },
+    {
+      name: "QuillJs",
+      icon: quill_logo,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
@@ -133,18 +151,14 @@ import {
       name: "git",
       icon: git,
     },
-    // {
-    //   name: "figma",
-    //   icon: figma,
-    // },
-    // {
-    //   name: "docker",
-    //   icon: docker,
-    // },
-    // {
-    //   name: "DSA",
-    //   icon: dsa_logo
-    // },
+    {
+      name: "figma",
+      icon: figma,
+    },
+    {
+      name: "DSA",
+      icon: dsa_logo
+    },
     {
       name: "C",
       icon: c_logo
@@ -187,22 +201,44 @@ import {
   const experiences = [
     {
       title: "Software Engineer",
+      company_name: "Epam Systems",
+      icon: epam_logo,
+      iconBg: "#E6DEDD",
+      date: "Dec 2023 - Present",
+      points: [
+        "Working for MasterCard as a UI engineer and contributing in their Support Case Management portal as a part of three-person team.",
+        "Created entire Contact and FAQs page using modern UI components for the portal with dynamic FAQs based on current page which were curated by observing several mails from customers. Reduced customer mails regarding queries significantly by almost 70%.",
+        "Implemented export functionality for customers to export and download the case details into a styled excel file by which they can check for any information without logging-in or in offline mode.",
+        "Developed entire global search feature for the portal. This helped customers to search for any case from any page using case number or summary and save their time.",
+        "Built re-usable rich text editor which has all the features including custom made inline-image support with upload functionality by which customers can explain their query more clearly and effectively.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
+      company_name: "Marquee Equity",
+      icon: marquee_logo,
+      iconBg: "#E6DEDD",
+      date: "Sept 2023 - Dec 2023",
+      points: [
+        "Developed UI for Chat feature in company portal. This helped organisation to communicate with their clients effectively and eliminated the use of mail.",
+        "Proposed an idea to make the portal’s side navigation bar collapsible and implemented it, this helped to gain additional width for primary content.",
+        "Enhanced portal’s primary data-display table component with search and filter functionalities, this significantly reduced time to find a certain thing in large data. ",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company_name: "Argoid",
       icon: argoid_logo,
-      // iconBg: "#383E56",
       iconBg: "#E6DEDD",
-      date: "March 2023 - Present",
+      date: "Mar 2023 - Sept 2023",
       points: [
-        "Developing and maintaining web applications using Angular and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing top-notch gradient responsive design and ensuring cross-browser compatibility.",
-        "Developed dashboard for the Argoid product with eye-catching tables, graphs and cards view to visualise data.",
-        "Built real-time CSS editor to display the items of online stores based on the user’s input of styles with Javascript logical implementation.",
-        "Developed Slot Recommendation UI/UX allowing users to add recommendations for their stores based on slots and pin specific recommendations to a certain slot number.",
-        "Used advanced frontend and array manipulation concepts with logical implementation to get things working.",
+        "Contributed to real-time recommendation providing products of organisation.",
+        "Implemented a video-player for OTT platform with real-time watch-percentage calculation, this is used to feed the recommendation-model to provide content feed based on customer’s taste.",
+        "Developed dashboard for one of the company’s product with eye-catching tables, graphs and cards to help company review its metrics effectively.",
+        "Enhanched UI/UX with top-notch gradient responsive design and ensuring cross-browser compatibility.",
+        "Built real-time CSS-editor to display the items of online stores based on the client’s input of styles which enabled them to style their products view based on their company theme.",
+        "Developed slot-recommendation UI in one of the products allowing clients to add their product recommendations in their stores based upon slots to their customers.",
         "Integrated several CRUD and functional APIs to make UI/UX interactive.",
-        // "Developed projects actively with top-notch gradient responsive designs and effects to make UI/UX look professional.",
-        "Reduced the workload nearly 15% of the team by contributing with React, Angular and other essential technologies."
       ],
     },
     {
@@ -210,7 +246,6 @@ import {
       company_name: "Virtusa",
       icon: virtusa_logo,
       iconBg: "#E6DEDD",
-      // iconBg: "#383E56",
       date: "Jun 2022 - Mar 2023",
       points: [
         "Developed Full Stack Applications with team collaboration.",
@@ -279,6 +314,39 @@ import {
       ],
       image: P_Portfolio_DP,
       source_code_link: "https://github.com/PranavYo/Personal_portfolio.git",
+    },
+    {
+      name: "Feedback Application",
+      description:
+        "MERN-Stack web application that allows companies to recieve feedback from their customers. Made using modern UI components with up-vote and comment features.",
+      tags: [
+        {
+          name: "MongoDB",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Express.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "React.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "SCSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: feedback_app_dp,
+      source_code_link: "https://github.com/PranavYo/Feedback-App.git",
     },
     {
       name: "Budget Tracker and Bill splitter",
